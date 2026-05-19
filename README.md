@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./assets/brand/rannta-xchain-logo.png" alt="RANNTA X-Chain" width="180" />
+</p>
+
 # RANNTA NETWORK X-CHAIN
 
 **RANNTA NETWORK X-CHAIN** is the public technical image of the RANNTA X-Chain project.
@@ -8,12 +12,11 @@ This repository is a public technical image for RANNTA X-Chain.
 
 It is not the private source repository, not the full node implementation, and not a production release package.
 
-## Logo placement
+## Brand assets
 
-Place the official network logo files here when ready:
+The public brand assets are stored in:
 
 ```text
-assets/brand/rannta-xchain-logo.svg
 assets/brand/rannta-xchain-logo.png
 assets/brand/rntx-native-icon.png
 ```
