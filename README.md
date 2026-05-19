@@ -1,8 +1,22 @@
-# RANNTA X-Chain Public Technical Image v0
+# RANNTA NETWORK X-CHAIN
+
+**RANNTA NETWORK X-CHAIN** is the public technical image of the RANNTA X-Chain project.
+
+## RANNTA X-Chain Public Technical Image v0
 
 This repository is a public technical image for RANNTA X-Chain.
 
 It is not the private source repository, not the full node implementation, and not a production release package.
+
+## Logo placement
+
+Place the official network logo files here when ready:
+
+```text
+assets/brand/rannta-xchain-logo.svg
+assets/brand/rannta-xchain-logo.png
+assets/brand/rntx-native-icon.png
+```
 
 ## RANNTA X-Chain Native Asset
 
