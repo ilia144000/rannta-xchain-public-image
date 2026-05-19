@@ -17,28 +17,17 @@ The official native asset of RANNTA X-Chain is:
 - Chain: RANNTA X-Chain
 - Chain ID: 13113 / 0x3339
 
-## External TON Asset Reference
+## Public Purpose
 
-RANNTA COIN on TON is a separate existing TON Jetton.
+This repository exists only to provide a public, redacted, non-sensitive technical image of the RANNTA X-Chain project.
 
-It is referenced only as an external ecosystem asset and historical/canonical RANNTA asset on TON.
+It is intended for:
 
-It is not the native asset of RANNTA X-Chain.
-
-- Display: RANNTA — RANNTA COIN on TON
-- Symbol: RANNTA
-- Full name: RANNTA COIN
-- Network: TON
-- Jetton Master: EQBCY5Yj9G6VAQibTe6hz53j8vBNO234n0fzHUP3lUBBYbeR
-- Decimals: 9
-- Max supply: 130,000,000 RANNTA
-
-## Mandatory Asset Separation Rule
-
-- RNTX — RANNTA Core X is the native asset of RANNTA X-Chain.
-- RANNTA — RANNTA COIN is a separate TON Jetton.
-- RANNTA COIN on TON must never be described as the native coin of RANNTA X-Chain.
-- RNTX must never be described as the TON Jetton.
+- Public technical positioning
+- Brand and project evidence
+- Redacted architecture overview
+- Controlled release communication
+- Non-sensitive public documentation
 
 ## Scope
 
@@ -67,4 +56,4 @@ This public image does not contain:
 
 ## Status
 
-This repository is intended for public review, branding evidence, technical positioning, and controlled ecosystem communication.
+This repository is intended for public review, branding evidence, technical positioning, and controlled ecosystem communication for RANNTA X-Chain.
