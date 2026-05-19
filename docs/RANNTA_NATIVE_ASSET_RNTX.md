@@ -1,7 +1,10 @@
-# RANNTA Native Asset Specification
+# RANNTA X-Chain Native Asset Specification
 
-## Native X-Chain Asset
+## Official Native X-Chain Asset
 
+The official native asset of RANNTA X-Chain is:
+
+- Display: RNTX — RANNTA Core X
 - Full name: RANNTA Core X
 - Symbol: RNTX
 - Smallest unit: NANTA
@@ -10,8 +13,13 @@
 - Chain: RANNTA X-Chain
 - Chain ID: 13113 / 0x3339
 
-## Separate TON Jetton
+## External TON Asset Reference
 
+RANNTA COIN on TON is a separate TON Jetton.
+
+It is not the native asset of RANNTA X-Chain.
+
+- Display: RANNTA — RANNTA COIN on TON
 - Full name: RANNTA COIN
 - Symbol: RANNTA
 - Network: TON
@@ -19,7 +27,7 @@
 - Decimals: 9
 - Max supply: 130,000,000 RANNTA
 
-## Display Rule
+## Required Display Rule
 
 - RNTX — RANNTA Core X
 - RANNTA — RANNTA COIN on TON

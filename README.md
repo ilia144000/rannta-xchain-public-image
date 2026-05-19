@@ -1,11 +1,14 @@
-# RANNTA Network Public Technical Image v0
+# RANNTA X-Chain Public Technical Image v0
 
-RANNTA Network is an independent blockchain and exchange ecosystem centered on RANNTA X-Chain.
+This repository is a public technical image for RANNTA X-Chain.
 
-This repository is a public technical image. It is not the private source repository, not the full node implementation, and not a production release package.
+It is not the private source repository, not the full node implementation, and not a production release package.
 
-## Official Native Asset
+## RANNTA X-Chain Native Asset
 
+The official native asset of RANNTA X-Chain is:
+
+- Display: RNTX — RANNTA Core X
 - Symbol: RNTX
 - Full name: RANNTA Core X
 - Smallest unit: NANTA
@@ -14,15 +17,28 @@ This repository is a public technical image. It is not the private source reposi
 - Chain: RANNTA X-Chain
 - Chain ID: 13113 / 0x3339
 
-## Separate TON Jetton
+## External TON Asset Reference
 
+RANNTA COIN on TON is a separate existing TON Jetton.
+
+It is referenced only as an external ecosystem asset and historical/canonical RANNTA asset on TON.
+
+It is not the native asset of RANNTA X-Chain.
+
+- Display: RANNTA — RANNTA COIN on TON
 - Symbol: RANNTA
 - Full name: RANNTA COIN
 - Network: TON
+- Jetton Master: EQBCY5Yj9G6VAQibTe6hz53j8vBNO234n0fzHUP3lUBBYbeR
 - Decimals: 9
 - Max supply: 130,000,000 RANNTA
 
-RNTX and RANNTA are separate assets and must not be conflated.
+## Mandatory Asset Separation Rule
+
+- RNTX — RANNTA Core X is the native asset of RANNTA X-Chain.
+- RANNTA — RANNTA COIN is a separate TON Jetton.
+- RANNTA COIN on TON must never be described as the native coin of RANNTA X-Chain.
+- RNTX must never be described as the TON Jetton.
 
 ## Scope
 
@@ -45,8 +61,9 @@ This public image does not contain:
 - TPS engine internals
 - Exchange private operator logic
 - Bridge settlement logic
-- Secrets, keys, tokens, or credentials
+- Private credentials or restricted access materials
 - Private deployment configuration
+- GitHub Actions restricted variables
 
 ## Status
 
