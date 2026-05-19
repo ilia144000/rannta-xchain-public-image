@@ -1,6 +1,6 @@
 {
-  "endpoint": "https://pilot.rannta.com/health",
+  "endpoint": "https://example.rannta.network/health",
   "status": "ok",
   "mode": "public-sample",
-  "note": "This is a redacted public evidence sample."
+  "note": "This is a non-operational redacted public evidence sample. It documents the expected health response shape only."
 }
