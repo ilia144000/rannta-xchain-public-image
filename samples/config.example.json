@@ -1,0 +1,10 @@
+{
+  "chain": "RANNTA X-Chain",
+  "chain_id_decimal": 13113,
+  "chain_id_hex": "0x3339",
+  "native_asset": "RNTX",
+  "smallest_unit": "NANTA",
+  "decimals": 13,
+  "mode": "public-example",
+  "private_fields": "redacted"
+}

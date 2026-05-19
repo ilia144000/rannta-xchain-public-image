@@ -1,0 +1,8 @@
+# Redacted public command examples
+
+GET_BLOCK_HEIGHT
+LOCAL_RUNTIME_STATUS
+LOCAL_CONSENSUS_STATUS
+LOCAL_BLOCK_PRODUCTION_STATUS
+
+Private operator commands, settlement commands, bridge execution commands, and sensitive runtime commands are intentionally excluded.

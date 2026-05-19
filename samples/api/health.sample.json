@@ -1,0 +1,8 @@
+{
+  "status": "ok",
+  "service": "rannta-public-pilot",
+  "mode": "public-evidence-sample",
+  "activation": "controlled",
+  "value_flow": "redacted",
+  "public_tps_claim": "gated"
+}

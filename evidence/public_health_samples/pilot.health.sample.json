@@ -1,0 +1,6 @@
+{
+  "endpoint": "https://pilot.rannta.com/health",
+  "status": "ok",
+  "mode": "public-sample",
+  "note": "This is a redacted public evidence sample."
+}
