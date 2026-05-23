@@ -21,7 +21,7 @@ RANNTA X-Chain is the native blockchain layer of the RANNTA Network ecosystem.
 Public technical concepts represented in this snapshot:
 
 - **Internet of Blockchains direction:** public positioning for future cross-chain interoperability without claiming final universal bridge production readiness.
-- **RNTX native asset layer:** RNTX — RANNTA Core X, with NANTA as the smallest unit.
+- **RNTX native asset layer:** RNTX - RANNTA Core X, with NANTA as the smallest unit.
 - **Controlled node runtime:** node operation is treated as a gated release path, not an uncontrolled public launch.
 - **Node-native future:** the long-term direction is a community-powered network where services progressively move from server-backed coordination toward node-native operation.
 - **RANNTA X-Change boundary:** the exchange surface is represented only as a public/redacted boundary; private operator logic and settlement logic are intentionally excluded.
@@ -54,7 +54,7 @@ assets/brand/rntx-native-icon.png
 
 The official native asset of RANNTA X-Chain is:
 
-- Display: RNTX — RANNTA Core X
+- Display: RNTX -RANNTA Core X
 - Symbol: RNTX
 - Full name: RANNTA Core X
 - Smallest unit: NANTA
