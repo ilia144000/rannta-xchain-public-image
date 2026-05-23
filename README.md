@@ -54,7 +54,7 @@ assets/brand/rntx-native-icon.png
 
 The official native asset of RANNTA X-Chain is:
 
-- Display: RNTX -RANNTA Core X
+- Display: RNTX - RANNTA Core X
 - Symbol: RNTX
 - Full name: RANNTA Core X
 - Smallest unit: NANTA
