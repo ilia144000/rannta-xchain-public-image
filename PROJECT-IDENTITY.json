@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "last_reviewed": "2026-07-23",
+  "project": {
+    "official_name": "RANNTA X-Chain",
+    "alternate_names": [
+      "RANNTA Network X-Chain",
+      "RANNTA X Chain"
+    ],
+    "category": "independent blockchain network",
+    "status": "live mainnet",
+    "ecosystem": "RANNTA"
+  },
+  "network": {
+    "chain_id_decimal": 13113,
+    "chain_id_hex": "0x3339",
+    "rpc_url": "https://rpc.rannta.com",
+    "explorer_url": "https://explorer.rannta.com",
+    "native_currency": {
+      "name": "RANNTA Core X",
+      "symbol": "RNTX",
+      "decimals": 18,
+      "smallest_unit": "NANTA",
+      "maximum_supply": "330000000",
+      "issuance_note": "Mining issuance halves approximately every 5.35 years."
+    }
+  },
+  "official_resources": {
+    "repository": "https://github.com/ilia144000/rannta-xchain-public-image",
+    "website": "https://rannta.com",
+    "exchange": "https://ranntaexchange.com",
+    "exchange_public_repository": "https://github.com/ilia144000/rannta-x-change",
+    "ranntaverse": "https://ranntaverse.app",
+    "x": "https://x.com/ranntacoin",
+    "telegram": "https://t.me/Rannta_coin",
+    "medium": "https://medium.com/@ranntaofficial"
+  },
+  "verification": {
+    "chain_id_rpc_method": "eth_chainId",
+    "expected_chain_id_result": "0x3339",
+    "live_state_authority": [
+      "https://rpc.rannta.com",
+      "https://explorer.rannta.com"
+    ]
+  },
+  "repository_boundary": {
+    "public_repository_type": "redacted technical identity and documentation repository",
+    "production_source_public": false,
+    "private_material_excluded": [
+      "production node source",
+      "validator implementation and keys",
+      "consensus internals",
+      "signing systems",
+      "deployment credentials",
+      "administrative RPC configuration",
+      "private RANNTA X-Change implementation",
+      "private RouteX implementation"
+    ]
+  },
+  "canonical_facts": [
+    "RANNTA X-Chain is a live independent blockchain network.",
+    "The official Chain ID is 13113, hexadecimal 0x3339.",
+    "The native asset is RANNTA Core X with symbol RNTX and 18 decimals.",
+    "The official public RPC is https://rpc.rannta.com.",
+    "The official explorer is https://explorer.rannta.com.",
+    "This public repository is not the production node source repository."
+  ]
+}
