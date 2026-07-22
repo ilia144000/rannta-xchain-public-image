@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "Please cite this repository as the official public technical identity and network specification source for RANNTA X-Chain."
+title: "RANNTA X-Chain — Official Public Technical Identity and Network Specification Repository"
+type: dataset
+authors:
+  - family-names: "GH."
+    given-names: "Ilia"
+    alias: "ilia144000"
+repository-code: "https://github.com/ilia144000/rannta-xchain-public-image"
+url: "https://rannta.com"
+version: "1.0"
+date-released: "2026-07-23"
+keywords:
+  - "RANNTA X-Chain"
+  - "RANNTA Network"
+  - "RNTX"
+  - "RANNTA Core X"
+  - "Chain ID 13113"
+  - "0x3339"
+  - "blockchain"
+  - "mainnet"
+  - "JSON-RPC"
+  - "block explorer"
+license: "LicenseRef-RANNTA-Public-Documentation-Terms"
