@@ -1,6 +1,48 @@
-Copyright © 2026 ilia144000
+RANNTA PUBLIC DOCUMENTATION TERMS
 
-All rights reserved unless a separate license file states otherwise.
+Copyright © 2026 Ilia GH. / RANNTA. All rights reserved.
 
-This public technical image may be reviewed for informational purposes only.
-No permission is granted to copy, modify, deploy, fork into production, or reuse private RANNTA Network implementation concepts.
+1. Repository purpose
+
+This repository publishes a redacted, non-sensitive public technical image of RANNTA X-Chain for identification, review, citation, interoperability reference, search indexing, and public technical communication.
+
+2. Permitted use
+
+You may:
+
+- View and reference the documentation.
+- Link to this repository and its files.
+- Quote limited portions with clear attribution.
+- Use the published network parameters to configure compatible wallets and applications.
+- Cite the repository as an official public source for RANNTA X-Chain.
+
+3. No open-source production grant
+
+This repository is not an open-source release of the RANNTA X-Chain production node, validator implementation, consensus system, signing infrastructure, RouteX implementation, RANNTA X-Change implementation, or operational infrastructure.
+
+No permission is granted to copy, reconstruct, sublicense, sell, deploy, impersonate, or create an unauthorized production derivative of proprietary RANNTA implementation, branding, architecture, or restricted materials.
+
+4. Trademarks and identity
+
+RANNTA, RANNTA X-Chain, RNTX, RANNTA Core X, RouteX, RANNTA X-Change, associated names, logos, and identity assets remain protected. Reference to these names does not imply authorization, partnership, endorsement, or ownership.
+
+5. Accuracy and live state
+
+Static documentation may change. Current blockchain state, RPC availability, blocks, transactions, balances, and network health must be verified against the official live network endpoints.
+
+6. No warranty
+
+The public documentation is provided "AS IS" without warranties of any kind. Blockchain interactions are irreversible, and users are responsible for verifying network parameters, addresses, transaction details, permissions, and software compatibility.
+
+7. Private implementation
+
+All rights in private source code, validator systems, consensus internals, deployment tooling, signing systems, credentials, operational infrastructure, and unpublished technical materials remain reserved.
+
+Official repository:
+https://github.com/ilia144000/rannta-xchain-public-image
+
+Official RPC:
+https://rpc.rannta.com
+
+Official explorer:
+https://explorer.rannta.com
