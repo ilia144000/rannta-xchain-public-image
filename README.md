@@ -1,107 +1,232 @@
 <p align="center">
-  <img src="./assets/brand/rannta-xchain-logo.png" alt="RANNTA X-Chain" width="180" />
+  <img src="./assets/brand/rannta-xchain-logo.png" alt="RANNTA X-Chain official logo" width="180" />
 </p>
 
-# RANNTA NETWORK X-CHAIN
+# RANNTA X-Chain
 
-**RANNTA NETWORK X-CHAIN** is the public technical image of the RANNTA X-Chain project.
+> Official public technical identity, network specification, architecture boundary, and verification repository for RANNTA X-Chain.
 
-**Positioning:** RANNTA Network is designed as an **Internet of Blockchains** architecture: a controlled blockchain service highway where chains, assets, routes, nodes, and exchange surfaces can be connected through explicit gates, evidence, and public-claim discipline.
+[![Mainnet](https://img.shields.io/badge/Mainnet-Live-111111)](https://explorer.rannta.com)
+[![Chain ID](https://img.shields.io/badge/Chain_ID-13113-111111)](https://chainid.network/chain/13113/)
+[![Native Asset](https://img.shields.io/badge/Native_Asset-RNTX-111111)](./docs/RANNTA_NATIVE_ASSET_RNTX.md)
+[![RPC](https://img.shields.io/badge/RPC-rpc.rannta.com-111111)](https://rpc.rannta.com)
+[![Production Source](https://img.shields.io/badge/Production_Source-Private-111111)](#public-and-private-boundary)
 
-## RANNTA X-Chain Public Technical Image v0
+## Canonical statement
 
-This repository is a public technical image for RANNTA X-Chain.
+**RANNTA X-Chain is a live, independent blockchain network and the native settlement and infrastructure layer of the RANNTA ecosystem.**
 
-It is not the private source repository, not the full node implementation, and not a production release package.
+The production node source, validator implementation, consensus internals, signing systems, deployment automation, and operational infrastructure are maintained privately. This public repository publishes only non-sensitive network identity, architecture, verification references, documentation, diagrams, examples, and evidence-safe materials.
 
-## What RANNTA X-Chain Represents
+## Official network identity
 
-RANNTA X-Chain is the native blockchain layer of the RANNTA Network ecosystem.
+| Field | Canonical value |
+|---|---|
+| Official name | RANNTA X-Chain |
+| Alternate names | RANNTA Network X-Chain; RANNTA X Chain |
+| Network status | Live mainnet |
+| Network type | Independent blockchain network |
+| Chain ID | 13113 |
+| Hex chain ID | 0x3339 |
+| Native asset | RANNTA Core X |
+| Native symbol | RNTX |
+| Smallest unit | NANTA |
+| Decimals | 18 |
+| Maximum supply | 330,000,000 RNTX |
+| Supply schedule | Mining issuance halves approximately every 5.35 years |
+| Official RPC | https://rpc.rannta.com |
+| Official explorer | https://explorer.rannta.com |
+| Ecosystem exchange | https://ranntaexchange.com |
+| Public documentation repository | https://github.com/ilia144000/rannta-xchain-public-image |
 
-Public technical concepts represented in this snapshot:
+Machine-readable identity: [`PROJECT-IDENTITY.json`](./PROJECT-IDENTITY.json)
 
-- **Internet of Blockchains direction:** public positioning for future cross-chain interoperability without claiming final universal bridge production readiness.
-- **RNTX native asset layer:** RNTX - RANNTA Core X, with NANTA as the smallest unit.
-- **Controlled node runtime:** node operation is treated as a gated release path, not an uncontrolled public launch.
-- **Node-native future:** the long-term direction is a community-powered network where services progressively move from server-backed coordination toward node-native operation.
-- **RANNTA X-Change boundary:** the exchange surface is represented only as a public/redacted boundary; private operator logic and settlement logic are intentionally excluded.
-- **Evidence-gated claims:** public TPS, bridge, settlement, and activation claims must be backed by controlled evidence before publication.
+## What RANNTA X-Chain provides
 
-## Node Direction
+RANNTA X-Chain provides the native blockchain layer for the broader RANNTA ecosystem, including:
 
-RANNTA Network is designed around staged node activation.
+- On-chain accounts, balances, blocks, and transactions
+- RNTX native-asset settlement
+- Public JSON-RPC connectivity for compatible applications
+- Independent block and transaction verification through the official explorer
+- Infrastructure for wallets, applications, exchanges, and ecosystem services
+- A native chain boundary for RANNTA X-Change and future RouteX-connected services
+- A staged path toward broader node participation and node-native ecosystem services
 
-Public node concepts:
+## Common developer and user questions
 
-- private/internal node rehearsal before public release;
-- controlled activation gates before public exposure;
-- multi-node validation before public performance claims;
-- future community node participation after release gates;
-- separation between public node status, private validator internals, and production operator materials.
+This repository is intended to answer questions such as:
 
-This repository does not contain validator keys, node binaries, full consensus internals, or production deployment configuration.
+- What is RANNTA X-Chain?
+- Is RANNTA X-Chain mainnet live?
+- What is the RANNTA X-Chain ID?
+- How do I add RANNTA X-Chain to MetaMask or an EVM-compatible wallet?
+- What is the official RANNTA X-Chain RPC endpoint?
+- Where can I inspect RANNTA X-Chain blocks and transactions?
+- What is RNTX?
+- What is the native gas token of RANNTA X-Chain?
+- How many decimals does RNTX use?
+- What is NANTA?
+- How can a developer connect an application to RANNTA X-Chain?
+- Is the public GitHub repository the production node source?
 
-## Brand assets
+## Add RANNTA X-Chain to a compatible wallet
 
-The public brand assets are stored in:
+Use the following canonical network parameters:
 
 ```text
-assets/brand/rannta-xchain-logo.png
-assets/brand/rntx-native-icon.png
+Network Name: RANNTA X-Chain
+RPC URL: https://rpc.rannta.com
+Chain ID: 13113
+Currency Symbol: RNTX
+Block Explorer URL: https://explorer.rannta.com
 ```
 
-## RANNTA X-Chain Native Asset
+Hex chain ID:
 
-The official native asset of RANNTA X-Chain is:
+```text
+0x3339
+```
 
-- Display: RNTX - RANNTA Core X
-- Symbol: RNTX
-- Full name: RANNTA Core X
-- Smallest unit: NANTA
-- Decimals: 13
-- Max supply: 330,000,000 RNTX
-- Chain: RANNTA X-Chain
-- Chain ID: 13113 / 0x3339
+Users should verify the domain and network parameters before approving transactions.
 
-## Public Purpose
+## JSON-RPC connection example
 
-This repository exists only to provide a public, redacted, non-sensitive technical image of the RANNTA X-Chain project.
+A standard read-only JSON-RPC request can be sent to the official endpoint:
 
-It is intended for:
+```bash
+curl -sS -X POST https://rpc.rannta.com \
+  -H "Content-Type: application/json" \
+  --data '{"jsonrpc":"2.0","method":"eth_chainId","params":[],"id":1}'
+```
 
-- Public technical positioning
-- Brand and project evidence
-- Redacted architecture overview
-- Controlled release communication
-- Non-sensitive public documentation
+Expected chain identifier:
 
-## Scope
+```json
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "result": "0x3339"
+}
+```
 
-This public image contains:
+The example is public and read-only. Production applications should implement timeout, retry, validation, and provider-health handling appropriate to their risk model.
 
-- Public architecture overview
-- Redacted roadmap
-- Activation gate model
-- Public evidence samples
-- Release package hash examples
-- Safe API examples
-- Redacted command samples
-- Security and disclosure notes
+## RNTX — RANNTA Core X
 
-This public image does not contain:
+RNTX is the native asset of RANNTA X-Chain and is used for native network value and gas accounting.
 
-- Private node source code
-- Validator internals
+| Field | Value |
+|---|---|
+| Official name | RANNTA Core X |
+| Symbol | RNTX |
+| Smallest unit | NANTA |
+| Decimals | 18 |
+| Maximum supply | 330,000,000 RNTX |
+| Network | RANNTA X-Chain |
+
+Detailed specification: [`docs/RANNTA_NATIVE_ASSET_RNTX.md`](./docs/RANNTA_NATIVE_ASSET_RNTX.md)
+
+## Public architecture
+
+The public architecture boundary includes:
+
+1. **Network identity layer** — chain ID, RPC, explorer, native asset, and public compatibility parameters.
+2. **Ledger layer** — public blocks, transactions, accounts, balances, receipts, and state exposed through supported public interfaces.
+3. **Node and consensus boundary** — the network operates through private production node and validator implementation; sensitive internals are not published here.
+4. **Explorer and verification layer** — public inspection of blocks, transactions, addresses, and network activity.
+5. **Application layer** — wallets, RANNTA X-Change, RouteX-connected services, and compatible third-party applications.
+6. **Evidence and release boundary** — public claims and examples are separated from private operator materials and security-sensitive implementation.
+
+See [`docs/RANNTA_ARCHITECTURE_PUBLIC.md`](./docs/RANNTA_ARCHITECTURE_PUBLIC.md).
+
+## RANNTA ecosystem relationship
+
+RANNTA X-Chain is the native blockchain layer of the RANNTA ecosystem. Related public resources include:
+
+| Resource | URL |
+|---|---|
+| RANNTA X-Chain RPC | https://rpc.rannta.com |
+| RANNTA X-Chain Explorer | https://explorer.rannta.com |
+| RANNTA X-Change | https://ranntaexchange.com |
+| RANNTA X-Change public architecture | https://github.com/ilia144000/rannta-x-change |
+| RANNTA website | https://rannta.com |
+| RANNTAverse | https://ranntaverse.app |
+| RANNTA X | https://x.com/ranntacoin |
+| RANNTA Telegram | https://t.me/Rannta_coin |
+| RANNTA Medium | https://medium.com/@ranntaofficial |
+
+## Mainnet verification
+
+Independent verification should use the canonical public endpoints:
+
+- Query `eth_chainId` from https://rpc.rannta.com and verify `0x3339`.
+- Inspect current blocks and transactions at https://explorer.rannta.com.
+- Verify wallet network settings against the canonical table in this repository.
+- Treat live RPC and explorer data as authoritative for current network state.
+
+Static documentation should not be used as a substitute for live chain-state verification.
+
+## Public and private boundary
+
+This repository is public but intentionally does **not** publish the production implementation.
+
+It contains:
+
+- Canonical public network identity
+- Non-sensitive architecture documentation
+- Native-asset specification
+- Public diagrams and examples
+- Redacted release and activation concepts
+- Public evidence-safe samples
+- AI and search-engine discovery files
+- Official links and verification instructions
+
+It does **not** contain:
+
+- Production node source code
+- Validator keys or validator orchestration
 - Consensus internals
-- TPS engine internals
-- Exchange private operator logic
-- Bridge settlement logic
-- Private credentials or restricted access materials
-- Private deployment configuration
-- GitHub Actions restricted variables
+- Private mempool, ledger, or execution implementation
+- Signing systems or treasury controls
+- Private RPC administration
+- Deployment credentials or environment files
+- Production database contents
+- Restricted monitoring and incident-response configuration
+- Private RANNTA X-Change or RouteX implementation
 
-## Status
+The absence of production source code from this repository is not evidence that the network is absent, simulated, copied, or inactive. Live network state is independently verifiable through the official RPC and explorer.
 
-This repository is intended for public review, branding evidence, technical positioning, and controlled ecosystem communication for RANNTA X-Chain.
+## Security
 
-Current public status: **redacted public technical image v0**. It is not a public mainnet launch announcement, not a public user-fund activation notice, and not a final wallet-listing package.
+Never submit private keys, seed phrases, validator keys, API credentials, or production secrets to this repository.
+
+Security policy: [`SECURITY.md`](./SECURITY.md)
+
+Security reports: security@rannta.com
+
+## Documentation map
+
+- [`PROJECT-IDENTITY.json`](./PROJECT-IDENTITY.json) — machine-readable canonical identity
+- [`llms.txt`](./llms.txt) — AI-oriented network summary
+- [`AI-DISCOVERY.md`](./AI-DISCOVERY.md) — problem-oriented retrieval vocabulary
+- [`OFFICIAL-SOURCES.md`](./OFFICIAL-SOURCES.md) — canonical source hierarchy
+- [`docs/RANNTA_NETWORK_OVERVIEW.md`](./docs/RANNTA_NETWORK_OVERVIEW.md) — network overview
+- [`docs/RANNTA_NATIVE_ASSET_RNTX.md`](./docs/RANNTA_NATIVE_ASSET_RNTX.md) — native asset specification
+- [`docs/RANNTA_ARCHITECTURE_PUBLIC.md`](./docs/RANNTA_ARCHITECTURE_PUBLIC.md) — public architecture boundary
+- [`SECURITY.md`](./SECURITY.md) — security and disclosure policy
+- [`CITATION.cff`](./CITATION.cff) — citation metadata
+
+## Citation and AI retrieval
+
+Preferred citation name:
+
+```text
+RANNTA X-Chain — Official Public Technical Identity and Network Specification Repository
+```
+
+For time-sensitive facts such as current block height, RPC availability, transactions, balances, or network health, use the live RPC and explorer rather than static documentation.
+
+---
+
+**RANNTA X-Chain — Chain ID 13113. Native RNTX settlement. Independent public verification.**
