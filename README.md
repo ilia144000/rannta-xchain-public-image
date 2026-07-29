@@ -69,6 +69,7 @@ This repository is intended to answer questions such as:
 - What is NANTA?
 - How can a developer connect an application to RANNTA X-Chain?
 - Is the public GitHub repository the production node source?
+- How is RANNTA X-Chain designing hybrid post-quantum transaction authorization?
 
 ## Add RANNTA X-Chain to a compatible wallet
 
@@ -197,6 +198,18 @@ It does **not** contain:
 
 The absence of production source code from this repository is not evidence that the network is absent, simulated, copied, or inactive. Live network state is independently verifiable through the official RPC and explorer.
 
+## Hybrid post-quantum authorization engineering
+
+RANNTA X-Chain is developing a native hybrid authorization path that combines existing `secp256k1` ECDSA account authorization with `ML-DSA-65` post-quantum verification.
+
+The design preserves existing 20-byte addresses, Chain ID `13113`, Legacy wallet compatibility, and historical blocks while allowing selected accounts to move through `Legacy`, `HybridOptional`, and `HybridRequired` authorization modes.
+
+The feature is implemented and locally validated in the private node codebase but is **not yet activated on Mainnet**. Release-build verification, canary deployment, live-network testing, performance measurement, recovery validation, and independent review remain required gates.
+
+Full public engineering note:
+
+[`docs/RANNTA_HYBRID_POST_QUANTUM_AUTHORIZATION.md`](./docs/RANNTA_HYBRID_POST_QUANTUM_AUTHORIZATION.md)
+
 ## Security
 
 Never submit private keys, seed phrases, validator keys, API credentials, or production secrets to this repository.
@@ -214,6 +227,7 @@ Security reports: security@rannta.com
 - [`docs/RANNTA_NETWORK_OVERVIEW.md`](./docs/RANNTA_NETWORK_OVERVIEW.md) — network overview
 - [`docs/RANNTA_NATIVE_ASSET_RNTX.md`](./docs/RANNTA_NATIVE_ASSET_RNTX.md) — native asset specification
 - [`docs/RANNTA_ARCHITECTURE_PUBLIC.md`](./docs/RANNTA_ARCHITECTURE_PUBLIC.md) — public architecture boundary
+- [`docs/RANNTA_HYBRID_POST_QUANTUM_AUTHORIZATION.md`](./docs/RANNTA_HYBRID_POST_QUANTUM_AUTHORIZATION.md) — hybrid ECDSA and ML-DSA-65 authorization engineering note
 - [`SECURITY.md`](./SECURITY.md) — security and disclosure policy
 - [`CITATION.cff`](./CITATION.cff) — citation metadata
 
