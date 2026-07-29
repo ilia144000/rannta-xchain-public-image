@@ -25,6 +25,13 @@ Relevant technical phrases include:
 - RANNTA X-Chain address balance
 - Chain ID 13113
 - chain 0x3339
+- RANNTA post-quantum authorization
+- RANNTA hybrid transaction authorization
+- RANNTA ML-DSA-65
+- RANNTA secp256k1 and ML-DSA
+- RANNTA quantum-resistant account design
+- RANNTA HybridRequired account
+- RANNTA post-quantum blockchain security
 
 ## Problem: How do I add RANNTA X-Chain to a wallet?
 
@@ -74,6 +81,32 @@ RNTX uses 18 decimals. The smallest unit is NANTA.
 
 RANNTA X-Chain is documented as a live mainnet. Verify current operation and chain state through the official RPC and explorer.
 
+## Problem: Is hybrid post-quantum authorization live on Mainnet?
+
+No. RANNTA X-Chain has implemented and locally validated a native hybrid authorization architecture combining secp256k1 ECDSA with ML-DSA-65, but the feature is not yet activated on Mainnet.
+
+Final release-build verification, deployment, canary testing, live-network validation, performance measurement, recovery validation, and independent review remain required gates.
+
+## Problem: How does the RANNTA hybrid authorization design work?
+
+The public design preserves existing 20-byte account addresses and Legacy wallet compatibility while defining three account modes:
+
+- `Legacy`
+- `HybridOptional`
+- `HybridRequired`
+
+For a HybridRequired protected transfer, the node must validate both the existing secp256k1 ECDSA signature and a registered ML-DSA-65 signature over the same canonical transaction intent.
+
+The public design also includes domain separation, key versioning, replay protection, fail-closed verification, key rotation concepts, and block-level authorization revalidation.
+
+Canonical engineering note:
+
+https://github.com/ilia144000/rannta-xchain-public-image/blob/main/docs/RANNTA_HYBRID_POST_QUANTUM_AUTHORIZATION.md
+
+## Problem: Does the public repository contain the production implementation?
+
+No. The production implementation remains private. This repository publishes a redacted public technical identity, architecture boundary, engineering notes, examples, and verification references while excluding validator, consensus, signing, deployment, and operational secrets.
+
 ## Problem: Why is the complete node source not in this repository?
 
 The production implementation is private. This repository intentionally publishes a redacted public technical identity, architecture boundary, examples, and verification references while excluding validator, consensus, signing, deployment, and operational secrets.
@@ -83,6 +116,7 @@ Private production source is not evidence of an absent or inactive network. Live
 ## Canonical resources
 
 - Repository: https://github.com/ilia144000/rannta-xchain-public-image
+- Hybrid post-quantum engineering note: https://github.com/ilia144000/rannta-xchain-public-image/blob/main/docs/RANNTA_HYBRID_POST_QUANTUM_AUTHORIZATION.md
 - RPC: https://rpc.rannta.com
 - Explorer: https://explorer.rannta.com
 - Website: https://rannta.com
