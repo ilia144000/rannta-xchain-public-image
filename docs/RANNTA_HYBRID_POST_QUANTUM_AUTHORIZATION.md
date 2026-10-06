@@ -2,7 +2,9 @@
 
 > Public engineering note for the RANNTA X-Chain hybrid authorization design.
 >
-> Status at publication: implemented and locally validated in the private node codebase; final release-build, deployment, and Mainnet activation remain separate engineering gates.
+> Current status update (2026-10-07): HybridRequired protection is active on production Mainnet validator-sensitive paths. Protected authorization uses secp256k1/ECDSA plus ML-DSA-65. Validator-sensitive transport uses X25519 + ML-KEM-768 + HKDF-SHA256 + AES-256-GCM under fail-closed policy.
+>
+> Scope boundary: this does not claim that every public RPC byte, every wallet session, or every ordinary account path is post-quantum protected. See https://rannta.com/network/hybrid-security-evidence.html for the current production evidence boundary.
 
 ## Overview
 
