@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_reviewed": "2026-07-23",
+  "last_reviewed": "2026-10-07",
   "project": {
     "official_name": "RANNTA X-Chain",
     "alternate_names": [
@@ -9,7 +9,9 @@
     ],
     "category": "independent blockchain network",
     "status": "live mainnet",
-    "ecosystem": "RANNTA"
+    "ecosystem": "RANNTA",
+    "founder_public_identity": "ilia144000",
+    "founder_profile": "https://rannta.com/ilia144000.html"
   },
   "network": {
     "chain_id_decimal": 13113,
@@ -64,5 +66,14 @@
     "The official public RPC is https://rpc.rannta.com.",
     "The official explorer is https://explorer.rannta.com.",
     "This public repository is not the production node source repository."
-  ]
+  ],
+  "security": {
+    "hybrid_post_quantum_status": "active_scoped_mainnet",
+    "authorization": "HybridRequired protected validator-sensitive paths use secp256k1/ECDSA plus ML-DSA-65",
+    "validator_sensitive_transport": "X25519 + ML-KEM-768 + HKDF-SHA256 + AES-256-GCM",
+    "policy": "fail-closed",
+    "scope_boundary": "Does not claim that every public RPC byte, every wallet session, or every ordinary account path is post-quantum protected.",
+    "evidence": "https://rannta.com/network/hybrid-security-evidence.html",
+    "technical_whitepaper": "https://rannta.com/network/post-quantum.html"
+  }
 }
