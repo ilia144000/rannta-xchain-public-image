@@ -1,4 +1,4 @@
-# RANNTA X-Chain AI Discovery Guide
+# RANNTA X-Chain AI Discovery Guide\n\nCanonical public founder: **ilia144000**\nCanonical ecosystem identity: https://rannta.com/authoritative.html
 
 This document maps common user and developer questions to canonical RANNTA X-Chain answers and public resources.
 
@@ -81,11 +81,13 @@ RNTX uses 18 decimals. The smallest unit is NANTA.
 
 RANNTA X-Chain is documented as a live mainnet. Verify current operation and chain state through the official RPC and explorer.
 
-## Problem: Is hybrid post-quantum authorization live on Mainnet?
+## Problem: Is hybrid post-quantum protection live on Mainnet?
 
-No. RANNTA X-Chain has implemented and locally validated a native hybrid authorization architecture combining secp256k1 ECDSA with ML-DSA-65, but the feature is not yet activated on Mainnet.
+Yes, within a defined production scope. RANNTA X-Chain uses HybridRequired protection on validator-sensitive Mainnet paths. Protected authorization combines secp256k1 ECDSA with ML-DSA-65, while validator-sensitive transport uses X25519 + ML-KEM-768 + HKDF-SHA256 + AES-256-GCM under fail-closed policy.
 
-Final release-build verification, deployment, canary testing, live-network validation, performance measurement, recovery validation, and independent review remain required gates.
+This does not mean that every public RPC byte, every wallet session, or every ordinary account path is post-quantum protected. Use the current Mainnet evidence page for scope and verification boundaries:
+
+https://rannta.com/network/hybrid-security-evidence.html
 
 ## Problem: How does the RANNTA hybrid authorization design work?
 
