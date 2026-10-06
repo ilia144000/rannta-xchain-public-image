@@ -200,15 +200,15 @@ The absence of production source code from this repository is not evidence that 
 
 ## Hybrid post-quantum authorization engineering
 
-RANNTA X-Chain is developing a native hybrid authorization path that combines existing `secp256k1` ECDSA account authorization with `ML-DSA-65` post-quantum verification.
+RANNTA X-Chain operates scoped hybrid post-quantum protection on production Mainnet validator-sensitive paths. Protected authorization combines existing `secp256k1` ECDSA authorization with `ML-DSA-65` post-quantum verification.
 
-The design preserves existing 20-byte addresses, Chain ID `13113`, Legacy wallet compatibility, and historical blocks while allowing selected accounts to move through `Legacy`, `HybridOptional`, and `HybridRequired` authorization modes.
+The design preserves existing 20-byte addresses, Chain ID `13113`, Legacy wallet compatibility, and historical blocks while supporting `Legacy`, `HybridOptional`, and `HybridRequired` authorization modes where configured.
 
-The feature is implemented and locally validated in the private node codebase but is **not yet activated on Mainnet**. Release-build verification, canary deployment, live-network testing, performance measurement, recovery validation, and independent review remain required gates.
+HybridRequired protection is active on production Mainnet validator-sensitive paths. Validator-sensitive transport uses `X25519 + ML-KEM-768 + HKDF-SHA256 + AES-256-GCM` under fail-closed policy. This scoped statement does **not** claim that every public RPC byte, every wallet session, or every ordinary account path is post-quantum protected. Independent third-party review remains a separate assurance goal.
 
 Full public engineering note:
 
-[`docs/RANNTA_HYBRID_POST_QUANTUM_AUTHORIZATION.md`](./docs/RANNTA_HYBRID_POST_QUANTUM_AUTHORIZATION.md)
+[`docs/RANNTA_HYBRID_POST_QUANTUM_AUTHORIZATION.md`](./docs/RANNTA_HYBRID_POST_QUANTUM_AUTHORIZATION.md)\n\nCurrent Mainnet evidence: https://rannta.com/network/hybrid-security-evidence.html\n\nCurrent technical whitepaper: https://rannta.com/network/post-quantum.html
 
 ## Security
 
