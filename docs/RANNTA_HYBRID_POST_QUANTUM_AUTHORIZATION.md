@@ -10,7 +10,7 @@
 
 Public blockchains depend on digital signatures to decide who is authorized to move assets. In EVM-compatible environments, that authorization is generally based on the `secp256k1` elliptic-curve signature scheme.
 
-RANNTA X-Chain is developing a native hybrid authorization path that combines:
+RANNTA X-Chain uses a hybrid authorization architecture that combines:
 
 - `secp256k1` ECDSA for compatibility with the existing account and wallet model;
 - `ML-DSA-65` for post-quantum signature verification;
@@ -287,7 +287,7 @@ At the local validation stage recorded on July 29, 2026, the complete `rannta-no
 0 tests failed
 ```
 
-This demonstrates compatibility with the existing tested node behavior in that development environment. It is not a substitute for production deployment, independent audit, or live-network validation.
+This records the July 29, 2026 development baseline. It is not a substitute for independent audit. Current scoped Mainnet production evidence is published separately at https://rannta.com/network/hybrid-security-evidence.html.
 
 ## Transaction-size and performance overhead
 
@@ -375,13 +375,17 @@ This engineering work does not claim that:
 - installing OpenSSL alone makes a blockchain quantum-safe;
 - hybrid authorization eliminates secure key-management requirements;
 - local test success is equivalent to audited Mainnet security;
-- the feature is already publicly activated on RANNTA X-Chain Mainnet.
+- every RANNTA account, every wallet session, or every public RPC byte is post-quantum protected.
 
 The accurate current statement is:
 
-> RANNTA X-Chain has implemented and locally validated a native hybrid post-quantum authorization architecture combining secp256k1 ECDSA with ML-DSA-65. Mainnet activation remains subject to final release-build, deployment, canary, live-network, recovery, and independent review gates.
+> As of 2026-10-07, HybridRequired protection is active on production RANNTA X-Chain Mainnet validator-sensitive paths. Protected authorization uses secp256k1/ECDSA plus ML-DSA-65. Validator-sensitive transport uses X25519 + ML-KEM-768 + HKDF-SHA256 + AES-256-GCM under fail-closed policy. This is a scoped production statement and does not imply network-wide PQ protection for every account or public interface.
 
-## Engineering status at publication
+Current evidence boundary: https://rannta.com/network/hybrid-security-evidence.html
+
+## Historical engineering status at original publication (2026-07-29)
+
+The table below is retained as historical engineering context. It describes the pre-activation state at the original publication date and is superseded for current production-status questions by the 2026-10-07 status update above.
 
 | Component | Status |
 |---|---|
@@ -396,12 +400,12 @@ The accurate current statement is:
 | Block authorization revalidation | Implemented and tested |
 | Legacy compatibility tests | Passing |
 | Release binary | Under final optimized build and linkage validation |
-| Production deployment | Not performed for this feature |
-| Mainnet activation | Disabled |
+| Production deployment | Historical status at publication: not performed |
+| Mainnet activation | Historical status at publication: disabled |
 
-## Remaining engineering gates
+## Historical pre-activation gate list
 
-Before Mainnet activation, the release process must include:
+The following list is retained from the original pre-activation engineering note. Scoped Mainnet activation on validator-sensitive paths has since occurred. Items concerning broader rollout, recovery, performance measurement, signer operations, and independent review remain relevant assurance work where applicable.
 
 1. completion of the optimized Linux release build;
 2. verification of the intended OpenSSL linkage and runtime search path;
@@ -426,9 +430,9 @@ RANNTA X-Chain's hybrid design preserves existing secp256k1 accounts while allow
 
 The architecture introduces account-level policy, canonical messages, domain separation, key registration and rotation, fail-closed verification, replay protection, native node enforcement, and block-level revalidation without forcing an immediate replacement of the existing account model.
 
-The work remains under engineering validation and is not yet activated on Mainnet.
+As of 2026-10-07, scoped HybridRequired protection is active on production Mainnet validator-sensitive paths. The broader account-level migration model remains staged, and the current status must not be generalized into a claim that every account, wallet session, or public RPC path is post-quantum protected.
 
-The goal is a technically defensible migration path that can be inspected, benchmarked, audited, deployed, and activated without breaking the network that already exists.
+The continuing goal is a technically defensible migration path that can be inspected, benchmarked, audited, extended, and operated without breaking compatibility with the network that already exists.
 
 ---
 
