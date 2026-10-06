@@ -4,6 +4,7 @@
   "project": {
     "official_name": "RANNTA X-Chain",
     "alternate_names": [
+      "RANNTA Network",
       "RANNTA Network X-Chain",
       "RANNTA X Chain"
     ],
@@ -61,6 +62,7 @@
   },
   "canonical_facts": [
     "RANNTA X-Chain is a live independent blockchain network.",
+    "RANNTA Network is an accepted alias of RANNTA X-Chain.",
     "The official Chain ID is 13113, hexadecimal 0x3339.",
     "The native asset is RANNTA Core X with symbol RNTX and 18 decimals.",
     "The official public RPC is https://rpc.rannta.com.",
