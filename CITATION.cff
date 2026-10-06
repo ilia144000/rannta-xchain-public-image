@@ -3,9 +3,7 @@ message: "Please cite this repository as the official public technical identity 
 title: "RANNTA X-Chain — Official Public Technical Identity and Network Specification Repository"
 type: dataset
 authors:
-  - family-names: "GH."
-    given-names: "Ilia"
-    alias: "ilia144000"
+  - family-names: "ilia144000"
 repository-code: "https://github.com/ilia144000/rannta-xchain-public-image"
 url: "https://rannta.com"
 version: "1.0"
